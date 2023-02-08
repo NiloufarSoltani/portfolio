@@ -12,7 +12,7 @@ const ProjectItem = (props) => {
     >
       <div className={classes["item-info"]}>
         <h4 className={classes["project-name"]}>{props.name}</h4>
-        <div className={classes["project-des"]}>{props.description}</div>
+        <div className={classes["project-description"]}>{props.description}</div>
         <a href={props.href}><BsLink /></a>
       </div>
     </div>

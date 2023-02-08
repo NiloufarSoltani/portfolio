@@ -1,22 +1,47 @@
-.project-item{
-    flex-grow: 1;
-    border-radius: 4px;
-    padding: 16px;
-    background-size: cover;
+.project-item {
+  width: 50%;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 6px;
+  background-size: cover;
+  background-position: center;
 }
-.item-info{
-    background: rgba(0,0,0, 0.8);
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    color: #fff;
-    box-sizing: content-box;
+.item-info {
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 0 16px;
 }
-.project-item:hover .item-info{
-    opacity: 1;
-    transition: all 0.3s;
+.item-info a {
+  color: #fff;
+  font-size: 20px;
+  background: rgba(256, 256, 256, 0.5);
+  padding: 4px;
+  height: 26px;
+  width: 26px;
+  margin: 12px auto;
+  display: block;
+  line-height: 29px;
+  border-radius: 50%;
 }
-.project-name{
-    text-transform:capitalize;
+.item-info a:hover{
+    background: rgba(256, 256, 256, 0.8);
+    color: #000;
+}
+.project-item:hover .item-info {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.project-name {
+  text-transform: capitalize;
+}
+.project-description {
+  font-size: 14px;
+  color: antiquewhite;
+  font-family: "Poppins";
+  text-align: initial;
 }
