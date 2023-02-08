@@ -1,0 +1,22 @@
+.project-item{
+    flex-grow: 1;
+    border-radius: 4px;
+    padding: 16px;
+    background-size: cover;
+}
+.item-info{
+    background: rgba(0,0,0, 0.8);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    color: #fff;
+    box-sizing: content-box;
+}
+.project-item:hover .item-info{
+    opacity: 1;
+    transition: all 0.3s;
+}
+.project-name{
+    text-transform:capitalize;
+}

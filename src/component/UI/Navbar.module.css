@@ -1,0 +1,7 @@
+.navbar{
+    list-style: none;
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,41 @@
+.menu-button {
+  height: 56px;
+  width: 56px;
+  border: none;
+  border-radius: 28px;
+  background-color: rgb(65, 65, 63);
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 8px 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.active{
+  background-color: rgb(241, 251, 48);
+  color: #000;
+}
+.stretch {
+  width: 100%;
+}
+
+.icon {
+  font-size: 20px;
+  padding: 12px;
+  position: fixed;
+  left: 46px;
+}
+.title {
+  opacity: 0;
+  font-size: 16px;
+  padding-right: 16px;
+  padding-left: 46px;
+  text-transform: uppercase;
+}
+.show {
+  opacity: 1;
+  transition: all 1s;
+}

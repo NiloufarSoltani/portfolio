@@ -1,0 +1,26 @@
+.footer{
+    width: 100%;
+    background: rgb(41, 41, 41);
+    color: gray;
+    padding: 12px 0;
+    position: relative;
+}
+.update{
+    font-size: 14px;
+}
+.scroll-top{
+    position: absolute;
+    border: none;
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    right: 10px;
+    top:50%;
+    transform: translateY(-50%);
+    color: yellow;
+}
+.scroll-top svg{
+    font-size: 20px;
+}

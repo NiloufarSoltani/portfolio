@@ -1,0 +1,42 @@
+.content-item{
+  padding: 8px;
+  min-width: 50%;
+  box-sizing: border-box;
+}
+.content-item:last-child{
+  width: 100%;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  padding: 18px 16px;
+}
+.icon {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 4px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: rgb(88, 199, 194);
+  margin: 0 12px;
+}
+.info{
+    text-align: left;
+}
+.title{
+    color:rgb(31, 98, 94);
+    margin: 0 0 12px;
+}
+.info a {
+    text-decoration: none;
+}
+.info a:focus, .info a:visited{
+    color: unset;
+}

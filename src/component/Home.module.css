@@ -1,0 +1,71 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    background: rgb(14, 14, 14);
+    display: block;
+    font-family: 'Roboto';
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.img{
+    min-width: 300px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid yellow;
+    background-image: url('../assets/img/niloo.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 0 60px 0 100px;
+}
+.info{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+.name{
+    font-size: 60px;
+    color: aliceblue;
+}
+.first-name{
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+.job-title{
+    color: red;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin-top: -12px;
+    font-size: 18px;
+}
+.descrption{
+    color: grey;
+    text-align: left;
+    margin: 40px 0 24px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.more{
+    padding: 12px 20px;
+    background: transparent;
+    border: 1px solid yellow;
+    color: yellow;
+    border-radius: 4px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.more:hover{
+    background: yellow;
+    color: #000;
+    font-weight: 500;
+    border: none;
+    transition: all 1s;
+    word-spacing: 4px;
+}
