@@ -84,6 +84,9 @@
   transition: all 100ms;
 }
 @media screen and (max-width: 1200px) {
+  .home {
+    background-position: 0 0;
+  }
   .home-content {
     flex-direction: column;
     justify-content: center;
@@ -105,6 +108,8 @@
 @media screen and (max-width: 768px) {
   .home {
     height: calc(100vh - 72px);
+    background-position: 0;
+
   }
   .name {
     font-size: 54px;
@@ -118,10 +123,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .home-content{
+  .home {
+    background-position: 0;
+  }
+  .home-content {
     flex-wrap: wrap;
   }
-  .img{
+  .img {
     width: 170px;
     height: 170px;
   }
