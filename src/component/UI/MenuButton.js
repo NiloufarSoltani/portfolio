@@ -62,8 +62,8 @@ const MenuButton = (props) => {
   return (
     <button
       className={classes["menu-button"]}
-      onMouseEnter={() => setShowTitle(true)}
-      onMouseLeave={() => setShowTitle(false)}
+      onMouseEnter={() => {if(props.icon){setShowTitle(true)}}}
+      onMouseLeave={() => {if(props.icon){setShowTitle(false)}}}
       onClick={() => itemHandler(props.title)}
       data-id={props.title}
     >
