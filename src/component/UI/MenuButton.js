@@ -7,8 +7,21 @@ const MenuButton = (props) => {
   const [item, setItem] = useState(0);
   const items = ["home", "about", "skills", "portfolio", "contact"];
 
+  const getOffset = (element, horizontal = false) => {
+    if (!element) return 0;
+    return (
+      getOffset(element.offsetParent, horizontal) +
+      (horizontal ? element.offsetLeft : element.offsetTop)
+    );
+  };
+
   const itemHandler = (element) => {
-    document.getElementById(element).scrollIntoView({ behavior: "smooth" });
+    props.func && props.func();
+    if (props.topNav) {
+      const topOfElement = document.getElementById(element).offsetTop;
+      window.scrollTo({top: topOfElement - 72, behavior: 'smooth'})
+    } else
+      document.getElementById(element).scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -29,14 +42,17 @@ const MenuButton = (props) => {
 
   const scrollHandling = () => {
     const top = window.pageYOffset + 1;
+
     const coordinateItems = items.map(
       (i) => document.getElementById(i).offsetTop
     );
 
+    const elementsHeight = items.map(
+      (i) => document.getElementById(i).offsetHeight
+    );
+
     const indexOfItemOnView = coordinateItems.findIndex((i, index) => {
-      if (top >= coordinateItems[coordinateItems.length - 1]) {
-        return i === coordinateItems[coordinateItems.length - 1];
-      } else return i <= top && top < coordinateItems[index + 1];
+      return i <= top && top < elementsHeight[index] + i;
     });
     setItem(indexOfItemOnView);
   };
@@ -45,17 +61,13 @@ const MenuButton = (props) => {
 
   return (
     <button
-      className={
-        !showTitle
-          ? classes["menu-button"]
-          : `${classes["menu-button"]} ${classes.stretch}`
-      }
+      className={classes["menu-button"]}
       onMouseEnter={() => setShowTitle(true)}
       onMouseLeave={() => setShowTitle(false)}
       onClick={() => itemHandler(props.title)}
       data-id={props.title}
     >
-      <div className={classes.icon}>{props.icon}</div>
+      {props.icon && <div className={classes.icon}>{props.icon}</div>}
       <div
         className={
           !showTitle ? classes["title"] : `${classes["title"]} ${classes.show}`

@@ -19,8 +19,18 @@
     right: 10px;
     top:50%;
     transform: translateY(-50%);
-    color: yellow;
+    color: var(--font-color);
 }
 .scroll-top svg{
     font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    .footer{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .footer{
+        font-size: 13px;
+    }
 }

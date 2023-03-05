@@ -1,30 +1,12 @@
 .contact {
-    background: floralwhite;
-    padding: 24px;
+    background: var(--bg-color2);
+    min-height: 100vh;
 }
-.title{
-    position: relative;
-}
-.contact-title{
-    font-size: 90px;
-    position: relative;
-    margin-top: 0;
-    font-family: 'Poppins';
-    font-weight: 900;
-    background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
-    background-size: 200% 200%;
-    background-clip: text;
-    color: floralwhite;
-    -webkit-text-stroke: 6px transparent;
-}
-.subtitle{
-    position: absolute;
-    bottom: -10px;
-    color: rgb(2 132 125);
-    font-weight: 400;
-    left: 39%;
-    transform: translateX(-50%);
-    font-size: 30px;
+.contact-row{
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
 }
 .links{
     display: flex;

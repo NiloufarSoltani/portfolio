@@ -1,0 +1,51 @@
+.title{
+    font-family: "Poppins", sans-serif;
+}
+.first-title {
+  margin: 0;
+  font-size: 110px;
+  font-weight: 900;
+  color: transparent;
+  text-transform: uppercase;
+  user-select: none;
+}
+.second-title {
+  margin: -50px 0 60px;
+  font-size: 30px;
+  font-weight: 800;
+}
+.not-bold {
+  font-weight: 100;
+}
+.left .first-title {
+  margin-left: -24px;
+}
+.second-title {
+  justify-content: center;
+}
+.left .second-title {
+  justify-content: left;
+}
+@media screen and (max-width: 768px) {
+  .first-title {
+    font-size: 75px;
+  }
+  .second-title {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .first-title {
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto!important;
+  }
+  .second-title {
+    font-size: 25px;
+    margin-top: -42px;
+    text-align: center;
+  }
+  .left .second-title {
+    justify-content: center;
+  }
+}

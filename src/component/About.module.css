@@ -1,4 +1,89 @@
 .about {
-    height: 100vh;
-    background: gray;
+  background: var(--bg-color1);
+}
+.header {
+  margin: 0;
+  font: 900 110px "Poppins";
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(var(--font-color-rgb), 0.3);
+  text-transform: uppercase;
+  margin-left: -24px;
+  text-align: left;
+  user-select: none;
+}
+.content {
+  text-align: left;
+}
+.cv {
+  padding: 12px 20px;
+  margin: 16px 0;
+  background: var(--font-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  font-weight: 500;
+}
+.cv:hover {
+  background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+  transition: all 100ms;
+}
+.inner-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin: 28px 0;
+  font-size: 27px;
+  text-align: left;
+}
+.inner-title > span {
+  font-weight: 100;
+}
+.description {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--font-color-dark);
+}
+.expertise {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  margin-top: 36px;
+}
+.experience-column {
+  border-left: 1px dashed var(--font-color-dark-red);
+  height: fit-content;
+}
+.experience-column > div:last-child{
+  margin: 0;
+}
+@media screen and (max-width: 964px) {
+  .expertise {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0;
+  }
+  .inner-title{
+    margin-top: 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner-title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .description{
+    font-size: 14px;
+  }
+  .inner-title {
+    font-size: 24px;
+  }
+  .cv{
+    font-size: 13px;
+    letter-spacing: 0;
+  }
 }

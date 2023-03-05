@@ -12,11 +12,16 @@
   position: relative;
   margin: 8px 0;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: width 0.3s;
+}
+.menu-button:hover{
+  width: 100%;
+  background-color: var(--font-color);
+  color: var(--bg-color2);
 }
 .active{
-  background-color: rgb(241, 251, 48);
-  color: #000;
+  background-color: var(--font-color);
+  color: var(--bg-color2);
 }
 .stretch {
   width: 100%;
@@ -38,4 +43,9 @@
 .show {
   opacity: 1;
   transition: all 1s;
+}
+@media screen and (max-width:950px) {
+  .icon{
+    left: 27px;
+  }
 }
