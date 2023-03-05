@@ -1,71 +1,137 @@
-.home{
-    width: 100%;
-    height: 100vh;
-    background: rgb(14, 14, 14);
-    display: block;
-    font-family: 'Roboto';
+.home {
+  background-image: url("../assets/img/home-background.jpg");
+  background-position: 0 -250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  font-family: "Roboto";
+  padding-top: 72px;
+  position: relative;
 }
-.home-content{
-    display: flex;
-    align-items: center;
-    height: 100%;
+.home::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--font-color-rgb), 0.1);
+  background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
 }
-.img{
-    min-width: 300px;
-    width: 300px;
-    height: 300px;
-    border: 2px solid yellow;
-    background-image: url('../assets/img/niloo.jpg');
-    background-size: cover;
-    border-radius: 50%;
-    margin: 0 60px 0 100px;
+.home-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 100%;
 }
-.info{
-    display: flex;
-    flex-flow: column;
-    align-items: flex-start;
+.img {
+  min-width: 300px;
+  height: 300px;
+  border: 2px solid var(--font-color);
+  background-image: url("../assets/img/niloo.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 60px 0 100px;
 }
-.name{
-    font-size: 60px;
-    color: aliceblue;
+.info {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
 }
-.first-name{
-    font-family: 'Poppins';
-    font-weight: 700;
+.name {
+  font-size: 60px;
+  display: flex;
+  font-family: "Poppins";
+  font-weight: 100;
+  color: var(--font-color);
+  text-shadow: 0 0 4px rgba(23, 22, 23, 0.7);
 }
-.job-title{
-    color: red;
-    font-family: 'Roboto';
-    font-weight: 300;
-    margin-top: -12px;
-    font-size: 18px;
+.first-name {
+  font-weight: 600;
+  padding-right: 12px;
 }
-.descrption{
-    color: grey;
-    text-align: left;
-    margin: 40px 0 24px;
-    font-size: 14px;
-    line-height: 1.7;
+.job-title {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
 }
-.more{
-    padding: 12px 20px;
-    background: transparent;
-    border: 1px solid yellow;
-    color: yellow;
-    border-radius: 4px;
+.descrption {
+  color: #fff;
+  text-align: left;
+  margin: 22px 0 36px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.more {
+  padding: 12px 20px;
+  background: var(--font-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.more:hover {
+  background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
+  transition: all 100ms;
+}
+@media screen and (max-width: 1200px) {
+  .home-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .img {
+    width: 200px;
+    height: 200px;
+    margin: 40px 0;
+    min-width: unset;
+  }
+  .info {
+    align-items: inherit;
+  }
+  .descrption {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    height: calc(100vh - 72px);
+  }
+  .name {
+    font-size: 54px;
+  }
+  .job-title {
+    font-size: 22px;
+  }
+  .descrption {
     font-size: 15px;
-    text-transform: uppercase;
-    font-family: 'Poppins';
-    letter-spacing: 2px;
-    word-spacing: 5px;
-    font-weight: 300;
-    cursor: pointer;
+  }
 }
-.more:hover{
-    background: yellow;
-    color: #000;
-    font-weight: 500;
-    border: none;
-    transition: all 1s;
-    word-spacing: 4px;
+
+@media screen and (max-width: 480px) {
+  .home-content{
+    flex-wrap: wrap;
+  }
+  .img{
+    width: 170px;
+    height: 170px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .job-title {
+    font-size: 17px;
+  }
+  .descrption {
+    font-size: 13px;
+  }
 }

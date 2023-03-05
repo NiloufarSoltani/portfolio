@@ -1,4 +1,19 @@
 .row{
     width: 70%;
     margin: auto;
+    padding: 40px 0;
+    box-sizing: border-box;
+    min-height: inherit;
+}
+@media screen and (max-width:768px) {
+    .row{
+        width: 85%;
+        margin: auto;
+    }
+}
+@media screen and (max-width:480px) {
+    .row{
+        width: 100%;
+        padding: 32px 18px;
+    }
 }

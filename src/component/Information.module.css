@@ -1,0 +1,24 @@
+.information{
+    width: 100%;
+    padding: 8px 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+.info{
+    color: var(--font-color-dark-red);
+    text-transform: capitalize;
+}
+.detail{
+    padding-left: 8px;
+    color: var(--font-color-dark);
+}
+@media screen and (max-width: 768px) {
+    .information{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .information{
+        font-size: 14px;
+    }
+}

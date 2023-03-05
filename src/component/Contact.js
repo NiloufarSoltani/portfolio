@@ -4,16 +4,13 @@ import { MdEmail, MdLocationOn } from "react-icons/md";
 import ContactItem from "./ContactItem";
 import Row from "./UI/Row";
 import classes from "./Contact.module.css";
+import Title from "./UI/Title";
 
 const Contact = () => {
   return (
     <div className={classes.contact} id="contact">
-      <Row>
-        <div className={classes.title}>
-          <h1 className={classes["contact-title"]}>Contact</h1>
-          <p className={classes.subtitle}>Feel free to get in touch with me</p>
-        </div>
-
+      <Row className={classes['contact-row']}>
+        <Title firstTitle='Contact' secondTitle='Convertation' thirdTitle='Start' />
           <div className={classes.links}>
             <ContactItem
               title="Phone Number"

@@ -1,34 +1,28 @@
 .portfolio {
-    height: 100vh;
-    background: lightslategrey;
+  padding: 16px 0;
+  background: var(--bg-color1);
+  min-height: 100vh;
 }
-.title{
-    position: relative;
+.projects {
+  display: flex;
+  flex-flow: column;
+  gap: 24px;
 }
-.portfolio-title{
-    font-size: 90px;
-    margin-top: 0;
-    font-family: 'Poppins';
-    font-weight: 900;
-    background: linear-gradient(-45deg, #af6c15, #e73c6f, #d2cb00, #0fffb7);
-    background-size: 200% 200%;
-    background-clip: text;
-    color: lightslategrey;
-    -webkit-text-stroke: 3px transparent;
+@media screen and (max-width: 1024px) {
+  .projects {
+    flex-flow: row;
+    gap: 16px;
+  }
 }
-.subtitle{
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    color: darkred;
-    font-weight: 400;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 30px;
+@media screen and (max-width: 768px) {
+  .projects {
+    gap: 10px;
+  }
 }
-.projects{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+@media screen and (max-width: 600px) {
+  .projects {
+    flex-flow: column;
+    align-items: center;
+    gap: 24px;
+  }
 }

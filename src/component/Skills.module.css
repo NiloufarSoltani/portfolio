@@ -1,4 +1,37 @@
 .skills {
-    height: 100vh;
-    background: bisque;
+  background: var(--bg-color2);
+  padding-bottom: 65px;
+}
+.content {
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--font-color-dark);
+    font-weight: 300;
+}
+.graph {
+  position: relative;
+  height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  transition: all 200ms;
+}
+@media screen and (min-width: 1201px) {
+    .graph{
+        margin-top: 72px;
+    }
+}
+@media screen and (max-width: 768px) {
+  .skills {
+    padding: 0;
+  }
+  .graph {
+    height: 800px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content{
+    font-size: 14px;
+  }
 }
