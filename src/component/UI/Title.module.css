@@ -1,5 +1,5 @@
-.title{
-    font-family: "Poppins", sans-serif;
+.title {
+  font-family: "Poppins", sans-serif;
 }
 .first-title {
   margin: 0;
@@ -26,6 +26,11 @@
 .left .second-title {
   justify-content: left;
 }
+@media screen and (max-width: 1024px) {
+  .first-title {
+    font-size: 90px;
+  }
+}
 @media screen and (max-width: 768px) {
   .first-title {
     font-size: 75px;
@@ -38,7 +43,7 @@
   .first-title {
     font-size: 60px;
     text-align: center;
-    margin: 0 auto!important;
+    margin: 0 auto !important;
   }
   .second-title {
     font-size: 25px;

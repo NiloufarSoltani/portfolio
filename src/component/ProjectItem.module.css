@@ -17,12 +17,12 @@
   width: 50%;
   overflow: hidden;
 }
-img {
+.image img {
   height: 100%;
   width: 100%;
   transition: all 0.4s;
 }
-img:hover {
+.image img:hover {
   transform: scale(1.2);
 }
 .item-info {

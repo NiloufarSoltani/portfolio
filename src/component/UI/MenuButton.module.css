@@ -26,7 +26,6 @@
 .stretch {
   width: 100%;
 }
-
 .icon {
   font-size: 20px;
   padding: 12px;
@@ -36,11 +35,12 @@
 .title {
   opacity: 0;
   font-size: 16px;
-  padding-right: 16px;
-  padding-left: 46px;
   text-transform: uppercase;
+  padding: 0;
 }
-.show {
+.show{
+  padding-right: 16px !important;
+  padding-left: 46px !important;
   opacity: 1;
   transition: all 1s;
 }

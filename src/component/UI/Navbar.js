@@ -7,6 +7,7 @@ import { TfiClose } from "react-icons/tfi";
 import { useEffect, useState } from "react";
 
 import MenuButton from "./MenuButton";
+import Logo from '../../assets/img/logo.png';
 import classes from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -60,11 +61,14 @@ const Navbar = () => {
         {showMenu ? (
           <TfiClose />
         ) : (
-          <div className={classes["nav-icon"]}>
-            <span className={classes.lines} />
-            <span className={classes.lines} />
-            <span className={classes.lines} />
-          </div>
+          <>
+            <img className={classes.logo} src={Logo} alt='logo' />
+            <div className={classes["nav-icon"]}>
+              <span className={classes.lines} />
+              <span className={classes.lines} />
+              <span className={classes.lines} />
+            </div>
+          </>
         )}
       </div>
       {showMenu && (

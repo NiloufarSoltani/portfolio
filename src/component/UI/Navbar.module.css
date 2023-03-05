@@ -28,13 +28,19 @@
   height: 72px;
   box-sizing: border-box;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   font-size: 36px;
   color: var(--font-color);
 }
+.logo{
+  width: 43px;
+  height: 43px;
+  margin: 0 28px;
+}
 .menu-nav svg {
   margin: 0 24px;
+  margin-left: auto;
 }
 .nav-icon {
   margin: 0 28px;
@@ -77,7 +83,7 @@
   opacity: 1;
   -webkit-text-stroke: 1px rgba(var(--font-color-rgb), 0.8);
   color: transparent;
-  font-size: 50px;
+  font-size: 52px;
   font-family: poppins, sans-serif;
   font-weight: 600;
   text-transform: uppercase;
@@ -91,5 +97,10 @@
 @media screen and (max-width: 950px) {
   .navbar{
     padding-inline-start: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu > button > div{
+    font-size: 46px;
   }
 }

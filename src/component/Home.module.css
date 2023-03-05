@@ -134,12 +134,16 @@
     height: 170px;
   }
   .name {
-    font-size: 40px;
+    font-size: 37px;
   }
   .job-title {
     font-size: 17px;
   }
   .descrption {
     font-size: 13px;
+  }
+  .more {
+    font-size: 13px;
+    letter-spacing: 0;
   }
 }
