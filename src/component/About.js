@@ -3,8 +3,18 @@ import Information from "./Information";
 import classes from "./About.module.css";
 import Experience from "./Experience";
 import Title from "./UI/Title";
+import CV from '../assets/files/NiloufarSoltani_CV.pdf';
 
 const About = () => {
+  const handleDownload = () => {
+    const downloadUrl = CV;
+    const link = document.createElement('a');
+    link.href = downloadUrl;
+    link.setAttribute('download', 'NiloufarSoltani_CV.pdf');
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className={classes.about} id="about">
       <Row>
@@ -32,16 +42,16 @@ const About = () => {
         </div>
         <div className={classes["personal-information"]}>
           <Information info="age" detail="28" />
-          <Information info="gender" detail="female" />
+          <Information info="gender" detail="Female" />
           <Information info="language" detail="English, Persian" />
-          <button className={classes.cv}>download my CV</button>
+          <button className={classes.cv} onClick={handleDownload}>download my CV</button>
         </div>
         <div className={classes.expertise}>
           <div>
             <h2 className={classes['inner-title']}>Work <span>Experience</span></h2>
             <div className={classes['experience-column']}>
             <Experience
-              title="Quality Control Specialist"
+              title="Quality Assurance Specialist"
               location="Fanap"
               duration="Sept 2019 - Dec 2020"
               description="As a QA specialist at Fanap, I was responsible for ensuring the quality of three different products by writing comprehensive test scenarios and test cases, conducting unit tests and integration tests, and acting as a liaison between the development team, project managers, and business analysts."
