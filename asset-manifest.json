@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.b0ad28de.css",
-    "main.js": "/portfolio/static/js/main.fa3baf2b.js",
+    "main.js": "/portfolio/static/js/main.bd3ea30e.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/home-background.jpg": "/portfolio/static/media/home-background.ed75793e72bd26f167a1.jpg",
     "static/media/Mockup.jpg": "/portfolio/static/media/Mockup.22f84c5d80670df502f5.jpg",
+    "static/media/NiloufarSoltani_CV.pdf": "/portfolio/static/media/NiloufarSoltani_CV.e3cd8e15441170ff58e5.pdf",
     "static/media/Mockup2.jpg": "/portfolio/static/media/Mockup2.e579e97002cb00054b47.jpg",
     "static/media/niloo.jpg": "/portfolio/static/media/niloo.5d6eba873a1d7d3a1455.jpg",
     "static/media/logo.png": "/portfolio/static/media/logo.2c58bbdc6d870135f41d.png",
     "index.html": "/portfolio/index.html",
     "main.b0ad28de.css.map": "/portfolio/static/css/main.b0ad28de.css.map",
-    "main.fa3baf2b.js.map": "/portfolio/static/js/main.fa3baf2b.js.map",
+    "main.bd3ea30e.js.map": "/portfolio/static/js/main.bd3ea30e.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0ad28de.css",
-    "static/js/main.fa3baf2b.js"
+    "static/js/main.bd3ea30e.js"
   ]
 }
