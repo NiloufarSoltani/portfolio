@@ -6,15 +6,6 @@ import Title from "./UI/Title";
 import CV from '../assets/files/NiloufarSoltani_CV.pdf';
 
 const About = () => {
-  const handleDownload = () => {
-    const downloadUrl = CV;
-    const link = document.createElement('a');
-    link.href = downloadUrl;
-    link.setAttribute('download', 'NiloufarSoltani_CV.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
   return (
     <div className={classes.about} id="about">
       <Row>
@@ -44,7 +35,7 @@ const About = () => {
           <Information info="age" detail="28" />
           <Information info="gender" detail="Female" />
           <Information info="language" detail="English, Persian" />
-          <button className={classes.cv} onClick={handleDownload}>download my CV</button>
+          <a className={classes.cv}  href={CV} download="NiloufarSoltani_CV.pdf">Download My CV</a>
         </div>
         <div className={classes.expertise}>
           <div>
