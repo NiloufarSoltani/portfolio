@@ -43,7 +43,7 @@ const Contact = () => {
             <ContactItem
               title="Address"
               icon={<MdLocationOn />}
-              detail="70 Temperance street, Toronto, Canada"
+              detail="395 Bloor Street E, Toronto, Canada"
             />
           </div>
       </Row>

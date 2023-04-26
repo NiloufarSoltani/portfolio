@@ -16,6 +16,7 @@
 }
 .cv {
   padding: 12px 20px;
+  display: inline-block;
   margin: 16px 0;
   background: var(--font-color);
   color: #fff;

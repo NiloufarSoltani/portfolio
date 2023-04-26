@@ -30,7 +30,15 @@ const Home = () => {
       }
     });
   }, []);
-
+  const scrollToMore = () =>{
+    const screenWidth = window.innerWidth;
+    const homeHeight = document.getElementById('home').clientHeight;
+    if(screenWidth > 768){
+      window.scrollTo({top: homeHeight,behavior:"smooth"})
+    } else{
+      window.scrollTo({top: homeHeight - 72,behavior:"smooth"})
+    }
+  }
   return (
     <div className={classes.home} id="home" ref={homeRef}>
       <Row className={classes["home-content"]}>
@@ -46,7 +54,7 @@ const Home = () => {
             me with the opportunity to work on multiple projects simultaneously,
             and to work closely with cross-functional teams.
           </div>
-          <button className={classes.more}>More Info</button>
+          <button className={classes.more} onClick={scrollToMore}>More Info</button>
         </div>
       </Row>
     </div>
