@@ -44,7 +44,7 @@ const Home = () => {
       <Row className={classes["home-content"]}>
         <div className={classes.img} ref={profileRef}></div>
         <div className={classes.info}>
-          <div className={classes["job-title"]}>Junior Front-end Developer</div>
+          <div className={classes["job-title"]}>Front-end Developer</div>
           <div className={classes.name}>
             <span className={classes["first-name"]}>Niloufar </span>
             <span className={classes["last-name"]}>Soltani</span>

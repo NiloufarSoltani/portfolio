@@ -32,7 +32,7 @@ const About = () => {
           </div>
         </div>
         <div className={classes["personal-information"]}>
-          <Information info="age" detail="28" />
+          <Information info="age" detail="30" />
           <Information info="gender" detail="Female" />
           <Information info="language" detail="English, Persian" />
           <a className={classes.cv}  href={CV} download="NiloufarSoltani_CV.pdf">Download My CV</a>
@@ -43,7 +43,7 @@ const About = () => {
             <div className={classes['experience-column']}>
             <Experience
               title="Quality Assurance Specialist"
-              location="Fanap"
+              location="Fanap ICT Co"
               duration="Sept 2019 - Dec 2020"
               description="As a QA specialist at Fanap, I was responsible for ensuring the quality of three different products by writing comprehensive test scenarios and test cases, conducting unit tests and integration tests, and acting as a liaison between the development team, project managers, and business analysts."
             />
