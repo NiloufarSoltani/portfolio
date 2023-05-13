@@ -165,6 +165,13 @@ const Skills = () => {
             top={screenSize==='small' ? "330px" : screenSize==='medium' ? "63px" : '390px'}
             left={screenSize==='small' ? "244px" : screenSize==='medium' ? "110px" : '238px'}
           />
+          <Sphere
+            size={screenSize==='small' ? "50" : screenSize==='medium' ? "65" : '65'}
+            text="JEST"
+            color="rgba(36, 89, 83, 0.3)"
+            top={screenSize==='small' ? "439px" : screenSize==='medium' ? "40px" : '100PX'}
+            left={screenSize==='small' ? "40px" : screenSize==='medium' ? "426px" : '679px'}
+          />
         </div>
       </Row>
     </div>
