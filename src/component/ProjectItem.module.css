@@ -25,13 +25,15 @@
 .image img:hover {
   transform: scale(1.2);
 }
-.item-info {
+.item-info, .info {
   width: 50%;
   box-sizing: border-box;
   padding: 24px;
   text-align: left;
   display: flex;
   flex-direction: column;
+}
+.item-info{
   justify-content: space-between;
 }
 .project-item:nth-child(even) .item-info {
