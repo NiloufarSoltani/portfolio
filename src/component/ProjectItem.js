@@ -9,15 +9,15 @@ const ProjectItem = (props) => {
       <div className={classes.image}>
         <img src={props.image} alt="project" />
       </div>
-      <div className={classes["item-info"]}>
+      <div className={props.href ? classes["item-info"] : classes["info"] }>
         <h3 className={classes["project-name"]}>{props.name}</h3>
         <div className={classes["project-description"]}>
           {props.description}
         </div>
-        <a href={props.href}>
+        {props.href && <a href={props.href}>
           <BsLink />
           &nbsp;&nbsp;&nbsp;Link
-        </a>
+        </a>}
       </div>
     </div>
   );

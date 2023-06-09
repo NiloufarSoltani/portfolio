@@ -11,7 +11,11 @@
 @media screen and (max-width: 1024px) {
   .projects {
     flex-flow: row;
+    flex-wrap: wrap;
     gap: 16px;
+  }
+  .projects > div{
+    width: 48%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -24,5 +28,8 @@
     flex-flow: column;
     align-items: center;
     gap: 24px;
+  }
+  .projects > div{
+    width: unset;
   }
 }
