@@ -46,7 +46,7 @@ const About = () => {
             frameworks and libraries, mastering the likes of React, Next.js,
             Jest, and TypeScript.
             <br />A new chapter in my life unfolded when my husband and I made
-            the bold decision to immigrate to Canada 1.5 years ago. Despite the
+            the bold decision to immigrate to Canada in 2022. Despite the
             physical distance, my commitment to Rasha remained unwavering,
             allowing me to continue contributing remotely. However, my desire
             for connection and collaboration has brought me to this point,
