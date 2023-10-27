@@ -35,8 +35,8 @@ const Contact = () => {
               title="Linkedin"
               icon={<FaLinkedin />}
               detail={
-                <a href="https://www.linkedin.com/in/niloufarsoltani1993">
-                  www.linkedin.com/in/niloufarsoltani1993
+                <a href="https://www.linkedin.com/in/niloufarsoltani">
+                  www.linkedin.com/in/niloufarsoltani
                 </a>
               }
             />
