@@ -29,8 +29,8 @@
 .img {
   min-width: 300px;
   height: 300px;
-  border: 2px solid var(--font-color);
-  background-image: url("../assets/img/niloo.jpg");
+  border: 2px solid white;
+  background-image: url("../assets/img/Niloufar.jpg");
   background-size: cover;
   border-radius: 50%;
   margin: 0 60px 0 100px;

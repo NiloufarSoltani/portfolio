@@ -8,6 +8,11 @@
   flex-flow: column;
   gap: 24px;
 }
+@media screen and (min-width: 1201px) {
+  .portfolio > div{
+    width: 60%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .projects {
     flex-flow: row;

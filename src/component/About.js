@@ -1,5 +1,4 @@
 import Row from "./UI/Row";
-import Information from "./Information";
 import classes from "./About.module.css";
 import Experience from "./Experience";
 import Title from "./UI/Title";
@@ -19,59 +18,54 @@ const About = () => {
         />
         <div className={classes.content}>
           <div className={classes.description}>
-            Once upon a time in Iran, I embarked on a journey to pursue my
-            passion for architecture, graduating in 2015. However, after
-            spending a couple of years in the field, I realized that it wasn't
-            the right career path for me. Determined to find my true calling, I
-            set out to explore different industries, ultimately finding my way
-            to the exciting world of information technology.
+            My path into frontend development wasn’t linear — but it was driven
+            by curiosity, creativity, and a desire to build things people
+            actually use.
             <br />
-            My transition into the IT realm began as a front-end intern at
-            Rasha, a dynamic startup. It was here that I first delved into the
-            realm of HTML and CSS, laying the foundation for my future
-            endeavors. However, my insatiable curiosity led me to venture beyond
-            the boundaries of design, leading me to the intriguing realm of
-            Quality Assurance.
-            <br /> At Fanap Holding, I took on the role of a QA specialist
-            expert, diving deep into the world of software testing. This
-            experience allowed me to hone my attention to detail, ensuring the
-            highest level of product quality. Yet, deep down, my heart yearned
-            for a more creative outlet, and I knew that my true calling lied in
-            the realm of front-end development.
-            <br />
-            Driven by my passion, I took a leap of faith and returned to my
-            roots at Rasha, this time as a front-end developer. Eager to expand
-            my skill set, I embraced JavaScript and embarked on a journey of
-            continuous learning. With each passing day, I discovered new
-            frameworks and libraries, mastering the likes of React, Next.js,
-            Jest, and TypeScript.
-            <br />A new chapter in my life unfolded when my husband and I made
-            the bold decision to immigrate to Canada in 2022. Despite the
-            physical distance, my commitment to Rasha remained unwavering,
-            allowing me to continue contributing remotely. However, my desire
-            for connection and collaboration has brought me to this point,
-            seeking opportunities to work closely with the vibrant community in
-            Toronto.
-            <br />
-            With a diverse skill set, an unwavering work ethic, and a burning
-            passion for front-end development, I am ready to take on new
-            challenges, contribute to innovative projects, and immerse myself in
-            the dynamic tech landscape of Toronto. I eagerly await the
-            opportunity to connect with like-minded professionals, whether it be
-            in a remote or on-site capacity. <br />
+            I got my start in tech by exploring HTML and CSS at a small startup,
+            where I discovered how exciting it is to bring interfaces to life in
+            the browser. That early experience quickly grew into a passion for
+            frontend development, and I soon found myself diving deeper into
+            JavaScript, React, and the entire modern frontend ecosystem. <br />
+            Along the way, I also gained hands-on experience in software
+            testing, which helped me understand how products behave under
+            real-world conditions. But while testing gave me a strong eye for
+            quality, my heart was always in building — so I made a full
+            transition to frontend development. <br />
+            As a developer at Rasha, I worked on React-based applications,
+            improving both the codebase and the user experience. I learned how
+            to collaborate across design, QA, and backend teams, and I built
+            real features used by real people. <br />
+            In 2022, after moving to Canada, I continued working remotely with
+            Rasha before joining Saichologist, a Denmark-based mental wellness
+            startup, as a Frontend Developer. In this role, I’ve helped shape
+            the UI from scratch, implementing new features, collaborating on UX
+            decisions, and focusing on performance, scalability, and clean
+            architecture. <br />
+            Now, I’m fully focused on frontend — bringing together creativity,
+            problem-solving, and a deep respect for users. With a diverse skill
+            set, an unwavering work ethic, and a burning passion for front-end
+            development, I am ready to take on new challenges, contribute to
+            innovative projects, and immerse myself in the dynamic tech
+            landscape of Toronto. I eagerly await the opportunity to connect
+            with like-minded professionals, whether it be in a remote or on-site
+            capacity. <br />
             This is the story of my journey so far, and I am excited to see what
             the future holds as I continue to pursue my dream career in
             front-end development.
           </div>
         </div>
-        <div className={classes["personal-information"]}>
-          <Information info="age" detail="30" />
-          <Information info="gender" detail="Female" />
-          <Information info="language" detail="English, Persian" />
-          <a className={classes.cv} href={CV} download="NiloufarSoltani_CV.pdf">
-            Download My CV
-          </a>
-        </div>
+        {/* <div className={classes["personal-information"]}> */}
+        <ul className={classes.more}>
+          <li>Based in Toronto 🇨🇦 (open to hybrid or remote)</li>
+          <li>4+ years experience in tech (frontend-focused)</li>
+          <li>Tech stack: React, TypeScript, Next.js, Redux, Git, Jest</li>
+          <li>Worked with teams across 🇮🇷 Iran, 🇩🇰 Denmark, and 🇨🇦 Canada</li>
+        </ul>
+        <a className={classes.cv} href={CV} download="NiloufarSoltani_CV.pdf">
+          Download My CV
+        </a>
+        {/* </div> */}
         <div className={classes.expertise}>
           <div>
             <h2 className={classes["inner-title"]}>
@@ -80,21 +74,47 @@ const About = () => {
             <div className={classes["experience-column"]}>
               <Experience
                 title="Front-end Developer"
+                location="Saichologist"
+                duration="May 2024 - present"
+                description={[
+                  "Building a mental wellness platform using Next.js, React, and TypeScript",
+                  "Integrating with backend services through REST APIs, ensuring seamless data flow",
+                  "Collaborating closely with designers and backend developers to create clean, scalable components",
+                  "Focused on performance, accessibility, and delivering features users love",
+                ]}
+              />
+              <Experience
+                title="Front-end Developer"
                 location="Rasha Communications Development"
-                duration="Jan 2021 - present"
-                description="As a Front-end developer at Rasha, I developed high-performance web applications using React and JavaScript. I collaborated with backend engineers to build efficient APIs and worked closely with cross-functional teams to deliver new features. I also contributed to creating bilingual components and styles, ensuring a seamless user experience across different languages. Overall, my commitment to excellence, attention to detail, and continuous learning allowed me to make significant contributions to the success of the projects I worked on."
+                duration="Nov 2021 - May 2024"
+                description={[
+                  "Led the migration from CSS Modules to Styled Components, improving consistency and maintainability",
+                  "Designed and built reusable React components across multiple projects",
+                  "Contributed to UI architecture and worked closely with QA to ensure testability",
+                  "Used tools like Git, Jira, and Figma in a fully remote, async-friendly team",
+                ]}
+              />
+              <Experience
+                title="Quality Assurance Analyst"
+                location="Fanap ICT Co"
+                duration="Sept 2019 - Oct 2021"
+                description={[
+                  "Tested SaaS-based financial applications across web and mobile platforms",
+                  "Designed and executed test plans for regression, integration, and UI testing",
+                  "Worked closely with developers and product managers to catch bugs early and improve product quality",
+                  "Provided UX feedback and helped streamline the QA process",
+                ]}
               />
               <Experience
                 title="Quality Assurance Specialist"
-                location="Fanap ICT Co"
-                duration="Sept 2019 - Dec 2020"
-                description="As a QA specialist at Fanap, I was responsible for ensuring the quality of three different products by writing comprehensive test scenarios and test cases, conducting unit tests and integration tests, and acting as a liaison between the development team, project managers, and business analysts."
-              />
-              <Experience
-                title="Front-end developer"
                 location="Rasha Communications Development"
                 duration="Jan 2018 - Aug 2019"
-                description="At Rasha, a startup company, I started as a UI intern, styling UI components, creating a Storybook, and migrating the project from CSS modules to Styled Components. I continued with Rasha as a full-time UI developer after completing my 4-month internship, gaining valuable experience with Scrum and effective team collaboration."
+                description={[
+                  "Verified and validated bug fixes in collaboration with the dev team",
+                  "Helped coordinate team-wide QA efforts through test case documentation and feedback loops",
+                  "Ran exploratory testing to uncover hidden issues before release",
+                  "Gained foundational experience in software quality that later informed my frontend development work",
+                ]}
               />
             </div>
           </div>

@@ -45,16 +45,17 @@ const Home = () => {
             <span className={classes["last-name"]}>Soltani</span>
           </div>
           <div className={classes.descrption}>
-            Passionate front-end developer with expertise in QA engineering,
-            driving innovation in web application development. Adaptable and
-            quick to grasp new concepts, I have successfully managed diverse
-            projects at both startup and large-scale SaaS companies. My focus is
-            on creating immersive user experiences through clean and efficient
-            code. With meticulous attention to detail, I ensure optimal quality
-            and performance. I thrive in collaborative environments, fostering
-            teamwork to deliver exceptional results. I constantly seek to
-            enhance my skills and stay at the forefront of front-end
-            development. Let's shape the future of digital experiences together.
+            Hi, I’m Niloufar, a Frontend Developer with a background in QA,
+            passionate about crafting polished, accessible, and user-friendly
+            interfaces. My journey into frontend began after several years in
+            quality assurance, where I developed a sharp eye for usability and
+            functionality. Today, I build robust, modern web applications using
+            React, TypeScript, and thoughtful UI/UX practices, grounded in that
+            same attention to detail. I’m especially energized by fast-paced,
+            collaborative environments where design and development work hand in
+            hand to deliver great digital experiences. Adaptable and quick to
+            grasp new concepts, I’ve successfully contributed to diverse
+            projects at both startups and large-scale SaaS companies.
           </div>
           <button className={classes.more} onClick={scrollToMore}>
             More Info

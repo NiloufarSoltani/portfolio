@@ -3,7 +3,7 @@ import classes from "./Portfolio.module.css";
 import ProjectItem from "./ProjectItem";
 import bss from "../assets/img/bss1.jpeg";
 import projectImg from "../assets/img/Mockup.jpg";
-import projectImg2 from "../assets/img/Mockup2.jpg";
+import saichologist from "../assets/img/saichologist.jpg";
 import Title from "./UI/Title";
 
 const Portfolio = () => {
@@ -18,6 +18,18 @@ const Portfolio = () => {
         />
         <div className={classes.projects}>
           <ProjectItem
+            image={saichologist}
+            href="https://saichologist.com"
+            name={
+              <>
+                <span>Saichologist, </span>AI-Powered Mental Health Assistant
+              </>
+            }
+            description="Saichologist is a web and mobile app that supports mental health professionals by simplifying scheduling, recording sessions, and offering AI-generated insights.
+I work with Next.js, TypeScript, and Azure to build responsive UI components and integrate core features with backend services.
+The app combines thoughtful design with intelligent functionality to improve how therapists prepare for and manage their sessions."
+          />
+          <ProjectItem
             image={projectImg}
             href="https://niloufarsoltani.github.io/english-learning-app/"
             name={
@@ -28,21 +40,10 @@ const Portfolio = () => {
             description="Experience the ultimate language learning tool with this React-based app, combining React Router, Redux, CSS modules and Firebase authentication. Search word definitions, improve listening skills with captivating stories, and track vocabulary with flashcards. Perfect for language learners and educators alike."
           />
           <ProjectItem
-            image={projectImg2}
-            href="https://react-foodorder-3cdbe.web.app/"
-            name={
-              <>
-                <span>basic </span>food order<span> app</span>
-              </>
-            }
-            description="Get a taste of convenience with this mock food ordering app built with React. Featuring custom hooks and React Context, this app offers a basic simulation of the ordering process. Explore its user-friendly interface and experience how it would feel to order food with ease, all without the need for a server. Perfect for learning and exploring the possibilities of React."
+            image={bss}
+            name={<>Business Support System</>}
+            description="This was a large-scale internal system designed to support the operations of a telecom service provider — managing everything from customer onboarding to billing, user permissions, and ticketing workflows. I contributed as a frontend developer, focusing on building and maintaining reusable UI components, implementing responsive layouts, and integrating the frontend with backend APIs. The system involved complex form structures, role-based dashboards, and data-heavy views, which required thoughtful state management and API handling."
           />
-            <ProjectItem
-              image={bss}
-              name={<>Business Support System</>}
-              description="During my time at the Rasha, we worke on a highly confidential project called the Business Support System (BSS). This platform encompassed multiple essential services, including a Customer Relationship Management (CRM) module, a product catalog management system, pricing and billing functionalities, order management capabilities, and a powerful BPMN (Business Process Model and Notation) engine.
-              It was a private project developed exclusively for the company, and due to its confidential nature, I am unable to share the project link or provide a public demo."
-            />
         </div>
       </Row>
     </div>

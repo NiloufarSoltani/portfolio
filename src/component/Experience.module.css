@@ -49,10 +49,9 @@
   margin: 6px 0 28px;
 }
 .description {
-  margin: 0;
-  line-height: 20px;
+  padding-left: 16px;
   font-weight: 300;
-  text-align: justify;
+  color: var(--font-color-dark);
 }
 @media screen and (max-width: 480px) {
   .title,

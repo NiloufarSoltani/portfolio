@@ -3,7 +3,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { HiWrenchScrewdriver } from "react-icons/hi2";
 import { BsBriefcaseFill } from "react-icons/bs";
 import { MdPermContactCalendar } from "react-icons/md";
-import { TfiClose } from "react-icons/tfi";
+import { MdOutlineClose } from "react-icons/md";
 import { useEffect, useState } from "react";
 
 import MenuButton from "./MenuButton";
@@ -59,7 +59,7 @@ const Navbar = () => {
         }}
       >
         {showMenu ? (
-          <TfiClose />
+          <MdOutlineClose />
         ) : (
           <>
             <img className={classes.logo} src={Logo} alt='logo' />

@@ -39,25 +39,22 @@ const Skills = () => {
             dark={false}
           />
           <div className={classes.content}>
-            Through my relentless pursuit of knowledge and my dedication to
-            personal and professional growth, I have acquired a robust set of
-            skills in UI development. These skills have been honed through
-            self-study and hands-on experience while working on a diverse range
-            of personal and professional projects. I have continuously expanded
-            my skill set, staying up-to-date with the latest industry trends and
-            best practices. With a strong foundation in front-end development, I
-            excel at crafting visually stunning and highly functional web
-            applications using JavaScript and React. My keen eye for detail
-            ensures pixel-perfect designs and flawless user experiences.
-            Collaborating seamlessly with cross-functional teams, I contribute
-            to the coherent integration of backend APIs, resulting in efficient
-            and performant applications. My ability to debug and resolve UI
-            defects swiftly ensures smooth operations and optimal
-            performance.Additionally, my strong problem-solving abilities
-            enables me to effectively debug and resolve issues, ensuring optimal
-            performance and functionality. My passion for continuous learning
-            drives me to constantly explore new technologies and techniques,
-            further enhancing my skill set.
+            I specialize in building user-facing applications with clean
+            architecture and strong attention to detail. My core stack includes
+            <b> JavaScript, React, TypeScript, and Next.js</b>, and I’ve used them to ship real
+            features in production environments — from building new UI
+            components to integrating complex APIs and refining the user
+            experience. Working closely with backend developers and designers, I
+            take ownership of the frontend — from translating designs into
+            functional interfaces to managing state, handling edge cases, and
+            ensuring performance and accessibility. I’m comfortable working in
+            agile environments, reviewing pull requests, breaking down tasks,
+            and continuously improving the codebase as part of a team. Beyond
+            the technical side, I care about building interfaces that feel
+            intuitive, maintainable, and responsive — both for the users and for
+            the developers who work on them after me. I stay current with modern
+            frontend practices, but more importantly, I focus on applying them
+            in a way that creates real value.
           </div>
         </div>
         <div className={classes.graph}>
@@ -82,7 +79,7 @@ const Skills = () => {
           />
           <Sphere
             size={"175"}
-            text="JavaScript"
+            text="React"
             color="rgba(70, 130, 180, 0.3)"
             top="50%"
             left="50%"
@@ -95,7 +92,7 @@ const Skills = () => {
                 ? "140"
                 : "150"
             }
-            text="CSS"
+            text="TypeScript"
             color="rgba(255, 192, 203, 0.3)"
             top={
               screenSize === "small"
@@ -120,7 +117,7 @@ const Skills = () => {
                 ? "133"
                 : "143"
             }
-            text="CSS Module"
+            text="Next.js"
             color="rgba(255, 99, 71, 0.3)"
             top={
               screenSize === "small"
@@ -145,7 +142,7 @@ const Skills = () => {
                 ? "145"
                 : "150"
             }
-            text="React"
+            text="JavaScript"
             color="rgba(255, 255, 0, 0.3)"
             top={
               screenSize === "small"
@@ -164,7 +161,7 @@ const Skills = () => {
           />
           <Sphere
             size={screenSize === "small" ? "97" : "130"}
-            text="Web Development"
+            text="Jest"
             color="rgba(255, 215, 0, 0.3)"
             top={
               screenSize === "small"
@@ -227,7 +224,7 @@ const Skills = () => {
           />
           <Sphere
             size={screenSize === "small" ? "66" : "105"}
-            text="scrum"
+            text="REST API"
             color="rgba(245, 245, 220, 0.3)"
             top={
               screenSize === "small"
@@ -265,7 +262,7 @@ const Skills = () => {
           />
           <Sphere
             size={screenSize === "small" ? "59" : "80"}
-            text="REST API"
+            text="Scrum"
             color="rgba(220, 20, 60, 0.3)"
             top={
               screenSize === "small"
@@ -328,7 +325,7 @@ const Skills = () => {
                 ? "90"
                 : "100"
             }
-            text="TypeScript"
+            text="CSS"
             color="rgba(255, 165, 0, 0.3)"
             top={
               screenSize === "small"
@@ -372,7 +369,7 @@ const Skills = () => {
                 ? "70"
                 : "75"
             }
-            text="Next.JS"
+            text="CSS Module"
             color="rgba(128, 0, 128, 0.3)"
             top={
               screenSize === "small"
@@ -397,7 +394,7 @@ const Skills = () => {
                 ? "65"
                 : "65"
             }
-            text="JEST"
+            text="Web Development"
             color="rgba(36, 89, 83, 0.3)"
             top={
               screenSize === "small"

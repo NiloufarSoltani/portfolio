@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className={classes.footer}>
         <p>© 2023 owned by Niloufar - All rights reserved.</p>
-        <p className={classes.update}>Last Updated February 2023</p>
+        <p className={classes.update}>Last Updated March 2025</p>
       <button onClick={scrollTop} className={classes["scroll-top"]}>
         <FaCaretUp />
       </button>
