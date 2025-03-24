@@ -34,4 +34,6 @@ cd portfolio
 npm install
 npm run dev
 
-Made with ❤️ by Niloufar Soltani
+```
+
+### Made with ❤️ by Niloufar Soltani
