@@ -1,5 +1,10 @@
 # 🌐 Niloufar Soltani – Frontend Developer Portfolio
 
+[![Live Website](https://img.shields.io/badge/Live%20Site-View-green?style=flat&logo=vercel)](https://niloufarsoltani.github.io/portfolio)
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 Hi! I'm Niloufar, a frontend developer passionate about building accessible, performant, and user-friendly web applications. This portfolio showcases my background, experience, and selected projects.
 
 ## 🧭 About
